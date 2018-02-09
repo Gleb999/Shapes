@@ -8,6 +8,10 @@ namespace Shapes
 {
     class Program
     {
+        static void GivePromotion(Employee emp)
+        {
+            Console.WriteLine("{0} was promoted!", emp.Name);
+        }
         static void Main(string[] args)
         {
             Console.WriteLine("***** Fun with Polymorphism *****\n");
@@ -19,6 +23,10 @@ namespace Shapes
             {
                 s.Draw();
             }
+            ThreeDCitcle o = new ThreeDCitcle();
+            o.Draw();
+            ((Circle)o).Draw();
+
             Console.ReadLine();
         }
     }
