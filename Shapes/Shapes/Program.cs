@@ -22,4 +22,5 @@ namespace Shapes
             Console.ReadLine();
         }
     }
+}
 
